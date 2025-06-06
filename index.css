@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav .all {
+  /* background-color: #bfbba9; */
+  background-color: transparent;
+  /* position: fixed; */
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10px;
+  align-items: center;
+  border-radius: 5px;
+  /* z-index: 2; */
+  max-width: 100%;
+}
+
+
+nav .all .search {
+  display: flex;
+}
+nav .all .search input {
+  align-items: center;
+  padding: 10px 5px;
+  border-radius: 5px;
+  width: 30vh;
+  margin-right: 3px;
+}
+nav .all .search .btn {
+  border-radius: 5px;
+  padding: 0px 15px;
+  margin-right: 10px ;
+  font-size: 16px;
+}
+nav .all .actions {
+  margin: 0px 30px;
+}
+nav .all .actions button {
+  border-radius: 5px;
+  padding: 8px 20px;
+  font-size: 16px;
+  background-color: #fff;
+  transition: 0.5s ease-in-out;
+  border: none;
+}
+nav .all .actions button:hover {
+  background-color: #092241;
+  color: #fff;
+  box-shadow: 2px 2px #e8f9ff;
+}
+nav .all .actions button a {
+  text-decoration: none;
+  color: #111;
+}
+nav .all .actions button a:hover {
+  color: #fff;
+}
+.container {
+  height: 100vh;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .video video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+.vid-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+.vid-info h3 {
+  font-size: 3em;
+  margin-top: 100px;
+}
+.container2 {
+  margin: 25px;
+  justify-items: center;
+}
+.container2 h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 40px 0;
+  margin-top: 80px;
+  color: #1a1397;
+  
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  height: 59vh;
+  width: 42vh;
+  box-shadow: 2px 2px 4px #dbdada;
+  justify-items: center;
+  margin: 26px 25px;
+  margin-left: 30px;
+  transition: 1s ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 4px #000;
+  z-index: 1;
+}
+.card img {
+  height: 28vh;
+  width: 30vh;
+  margin-top: 10px;
+}
+.card .card-data {
+  text-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+.card .card-data h3 {
+  color: #000957;
+  font-size: 1.5rem;
+}
+.card .card-data button {
+  margin-top: 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  transition: 1ms ease;
+  font-size: 1.2rem;
+}
+.card .card-data button:hover {
+  background-color: #111;
+  color: #fff;
+  box-shadow: 2px 2px #e8f9ff;
+}
+.container3 {
+  margin: 25px;
+}
+.container3 h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 40px;
+}
+.services {
+  display: flex;
+  margin: 10px 20px;
+}
+.service {
+  height: 55vh;
+  width: 40vh;
+  justify-items: center;
+  margin: 20px 25px;
+  transition: 1s ease;
+  text-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  transition: 1s ease;
+  cursor: pointer;
+}
+.service:hover {
+  box-shadow: 2px 2px 6px #dbdada;
+}
+.service img {
+  margin-top: 5px;
+}
+
+.ser-details h3{
+  margin-top: 20px;
+}
+.ser-details p{
+  margin: 20px 0px;
+}
+.ser-details button {
+  padding: 7px 14px;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  color: #111;
+  background-color: #fff;
+  transition: 1s ease;
+}
+.ser-details button:hover {
+  background-color: #111;
+  color: #fff;
+}
+.container4 {
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.container4 h1 {
+  color: #111;
+}
+.faq {
+  height: 57vh;
+  border: 1px solid #b7b7b7;
+  justify-items: center;
+  border-radius: 5px;
+}
+.faq .question {
+  font-size: 1.1rem;
+  border: 1px solid #b7b7b7;
+  border-radius: 5px;
+  height: 13vh;
+  width: 70vh;
+  line-height: 22px;
+  padding: 5px;
+  margin: 5px 0;
+  transition: 1s ease;
+}
+.faq .question:hover {
+  box-shadow: -2px -2px 4px #dbdada, 2px -2px 4px #dbdada, 2px 2px 4px #dbdada,
+    -2px 2px 4px #dbdada;
+}
+
+footer {
+  height: 60vh;
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+footer .foot {
+  background-color: #f5f5f5;
+  margin-top: 10px;
+}
+
+.foot p {
+  text-align: center;
+  padding: 10px;
+  border: 0.5px solid #777;
+}
+
+.foot p a {
+  color: #555;
+  text-decoration: none;
+}
+footer .content{
+  margin-left: 0;
+}
+footer .row {
+  display: flex;
+  align-items: start;
+  padding: 10px 0px;
+}
+
+footer .col {
+  margin: 10px 50px;
+}
+
+footer .col a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  padding: 8px;
+}
+footer .row .col h1{
+  color: #000;
+}
+
+
